@@ -3,11 +3,11 @@
 
 ----
 ### Brace Option help pages
-* [Synopsis](https://github.com/restarian/brace_prototype/blob/master/docs/synopsis.md)
+* [Synopsis](https://github.com/restarian/brace_option/blob/master/docs/synopsis.md)
 * Specification
   * **License information**
-  * [Package information](https://github.com/restarian/brace_prototype/blob/master/docs/specification/package_information.md)
-  * [Unit test output](https://github.com/restarian/brace_prototype/blob/master/docs/specification/unit_test_output.md)
+  * [Package information](https://github.com/restarian/brace_option/blob/master/docs/specification/package_information.md)
+  * [Unit test output](https://github.com/restarian/brace_option/blob/master/docs/specification/unit_test_output.md)
 
 ----
 
