@@ -1,0 +1,53 @@
+{
+  "name": "brace_option",
+  "main": "build/brace_option_umd.js",
+  "version": "0.4.8",
+  "description": "This script provides function which sits in a prototype to create prototypal property chaining control.",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha",
+    "build_config": "node ./node_modules/brace_umd/bin/build_umd.js --config-file uglify_option.json",
+    "build_umd": "r_js -o ./rjs_build_umd.js",
+    "build_amd": "r_js -o ./rjs_build.js",
+    "build": "npm run build_config && npm run build_umd && npm run build_amd",
+    "make_docs": "brace_document --navlink --link --link-dest ../Readme.md --link-path ../docs/synopsis.md -r -i docs_raw -b docs --force-title --title \"Brace Option help pages\" --sort depth --specification --mocha"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "amdefine": "^1.0.1",
+    "brace_maybe": "^0.1.3",
+    "brace_umd": "^0.10.1",
+    "bracket_utils": "^0.3.1",
+    "chai": "^4.2.0",
+    "mocha": "^7.0.0",
+    "requirejs": "^2.3.5"
+  },
+  "optionalDependencies": {
+    "brace_document": "^1.1.8",
+    "brace_document_link": "^1.1.9",
+    "brace_document_mocha": "^1.1.0",
+    "brace_document_navlink": "^1.1.9",
+    "brace_document_specification": "^1.2.2"
+  },
+  "author": {
+    "name": "Robert Steckroth",
+    "email": "RobertSteckroth@gmail.com"
+  },
+  "keywords": [
+    "options"
+  ],
+  "maintainers": [
+    {
+      "name": "nickali",
+      "email": "robertsteckroth@gmail.com"
+    }
+  ],
+  "readmeFilename": "README.md",
+  "engines": {
+    "node": ">=0.6.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/restarian/brace_prototype.git"
+  }
+}

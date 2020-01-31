@@ -1,0 +1,14 @@
+{
+  "mangle": false,
+  "compress": false,
+  "output": {
+    "beautify": true
+  },
+  "mangle": {
+    "properties": {
+		 "reserved": ["cool", false, false]
+	 },
+	 "reserved": ["joes", true, "false"]
+  }
+
+}
