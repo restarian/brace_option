@@ -8,7 +8,7 @@
 
 #### Brace Option is included in the Brace Suite.
 
-All works, media and writings contained within this project are licensed the same as Brace Document license unless it is explicitly specified otherwise.
+All works, media and writings contained within this project are licensed the same as Brace Option license unless it is explicitly specified otherwise.
 
 #### The Brace Suite is a collection of javascript centric libraries aimed at application development.
 

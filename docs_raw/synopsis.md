@@ -3,9 +3,9 @@
 
 [![Build status](https://ci.appveyor.com/api/projects/status/brjc2vpthpugvtk2?svg=true)](https://ci.appveyor.com/project/restarian/brace-option) [![Downloads](https://img.shields.io/npm/dm/brace_option.svg?svg=true)](https://npmjs.org/package/brace_option)
 
-| A part of the [Brace suite](https://github.com/restarian/restarian/blob/master/brace/README.md)| Developed with Windows 10 and Ubuntu 16 
+| A part of the [Brace suite](https://github.com/restarian/restarian/blob/master/brace/README.md)| For Windows 10 and Ubuntu 18
 | ---- | ----
-| ![Brace](https://raw.githubusercontent.com/restarian/restarian/master/brace/doc/image/brace_logo_small.png) | [![Ubuntu on Windows](https://raw.githubusercontent.com/restarian/restarian/master/doc/image/ubuntu_windows_logo.png)](https://github.com/Microsoft/BashOnWindows) | 
+| ![Brace](https://raw.githubusercontent.com/restarian/restarian/master/brace/doc/image/brace_logo_small.png) | [![Ubuntu on Windows](https://raw.githubusercontent.com/restarian/restarian/master/doc/image/ubuntu_windows_logo.png)](https://www.microsoft.com/en-us/p/ubuntu/9nblggh4msv6?activetab=pivot:overviewtab) | 
 
 ---
 ### Document pages
@@ -20,9 +20,12 @@
 
 * Does a good job of unit testing [Brace Umd](https://npmjs.org/package/brace_umd) as well as this project.
 
-**Project aim**
+**Project aim:**
 
 The primary purpose of this library is to create option like data within a prototype for user operation. 
+
+**Usage instructions:**
+
 The library provides a member which returns an Object to be used in a prototype. The returned Object contains a few additional methods which operate on the prototype. Below are the members which are created with the library return Object.
 
 **clear** - *[string, ...]*
