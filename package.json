@@ -1,7 +1,7 @@
 {
   "name": "brace_option",
   "main": "build/brace_option_umd.js",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "This script provides function which sits in a prototype to create prototypal property chaining control.",
   "license": "MIT",
   "scripts": {
