@@ -11,7 +11,7 @@
   * [Unit test output](https://github.com/restarian/brace_option/blob/master/docs/specification/unit_test_output.md)
 ----
 
-**Version**: 0.5.0
+**Version**: 0.5.1
 
 **Description**: This script provides function which sits in a prototype to create prototypal property chaining control.
 
@@ -26,10 +26,10 @@
 | Name | Action |
 | ---- | ------ |
  | test | ```mocha``` |
- | build_config | ```node ./node_modules/brace_umd/bin/build_umd.js --config-file uglify_option.json``` |
- | build_umd | ```r_js -o ./rjs_build_umd.js``` |
- | build_amd | ```r_js -o ./rjs_build.js``` |
+ | build_config | ```build_umd --config-file uglify_option.json``` |
+ | build_umd | ```r_js -o ./rjs_build_first.js && r_js -o ./rjs_build_second.js suffix="_umd"``` |
+ | build_amd | ```r_js -o ./rjs_build_first.js && r_js -o ./rjs_build_second.js``` |
  | build | ```npm run build_config && npm run build_umd && npm run build_amd``` |
- | make_docs | ```brace_document --navlink --link --link-dest ../Readme.md --link-path ../docs/synopsis.md -r -i docs_raw -b docs --force-title --title "Brace Option help pages" --sort depth --specification --mocha``` |
+ | make_docs | ```brace_document --navlink --link --link-dest ../Readme.md --link-path ../docs/synopsis.md -r -i docs --force-title --title "Brace Option help pages" --sort depth --specification --mocha``` |
 
 **Keywords**: *options*

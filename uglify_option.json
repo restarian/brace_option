@@ -8,6 +8,6 @@
 	},
 	"compress": true,
 	"mangle": { 
-		"properties": true
+		"properties": false 
 	}
 }

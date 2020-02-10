@@ -1,11 +1,16 @@
-# Brace Option 
-### Synopsis
-
 [![Build status](https://ci.appveyor.com/api/projects/status/brjc2vpthpugvtk2?svg=true)](https://ci.appveyor.com/project/restarian/brace-option) [![Downloads](https://img.shields.io/npm/dm/brace_option.svg?svg=true)](https://npmjs.org/package/brace_option)
 
-| A part of the [Brace suite](https://github.com/restarian/restarian/blob/master/brace/README.md)| Developed with Windows 10 and Ubuntu 16 
-| ---- | ----
-| ![Brace](https://raw.githubusercontent.com/restarian/restarian/master/brace/doc/image/brace_logo_small.png) | [![Ubuntu on Windows](https://raw.githubusercontent.com/restarian/restarian/master/doc/image/ubuntu_windows_logo.png)](https://github.com/Microsoft/BashOnWindows) | 
+| **The [Bracket Suite]** | **[Ubuntu on Windows]**   |
+|:-----------------------:|:-------------------------:|
+| ![Bracket logo]         | ![Ubuntu on Windows logo] |         |
+
+[Bracket Suite]: https://github.com/restarian/restarian/tree/master/bracket/
+[Ubuntu on Windows]: https://www.microsoft.com/en-us/store/p/ubuntu/9nblggh4msv6?activetab=pivot%3aoverviewtab
+
+[Ubuntu on Windows logo]: https://raw.githubusercontent.com/restarian/restarian/master/doc/image/ubuntu_windows_logo.png
+[Bracket logo]: https://raw.githubusercontent.com/restarian/restarian/master/bracket/doc/image/bracket_logo_small.png
+
+## Synopsis
 
 ---
 ### Brace Option help pages
@@ -21,47 +26,35 @@
 
 **Licensed under:** MIT
 
-**Bonuses:**
+### The primary purpose of this library is to create option like data within a prototype for program operation. 
 
-* Does a good job of unit testing [Brace Umd](https://npmjs.org/package/brace_umd) as well as this project.
+### Usage instructions
 
-**Project aim**
-
-The primary purpose of this library is to create option like data within a prototype for user operation. 
 The library provides a member which returns an Object to be used in a prototype. The returned Object contains a few additional methods which operate on the prototype. Below are the members which are created with the library return Object.
 
-**clear** - *[string, ...]*
+**clear([string, ...])**
 	
-* The clear member should be called with no parameters or with zero to many string parameters. All of the properties added with the original constructor (the usable members), will have the values reset to the current prototype value. An empty call clears all of the usable values while only those properties matching the strings passed in will be reset if parameters are passed in. This member is idempotent.
+* The clear member should be called with no parameters or with zero to many string parameters. All of the properties that were added with the original constructor (the option members), and any added with the *add_qualifier()* member, will have the values reset to the current prototype value. An empty call clears all of the option values while only those properties matching the strings passed in will be reset if parameters are passed in. This member is idempotent.
 
-**proto_extend** - *[object]*
+**proto_extend(Object)**
 	
-* This will extend the current prototype it is attached to with a complete description of the passed in Object. These properties are not added as usable members.
+* This will extend the current prototype it is attached to with a complete description of the passed in Object. These properties are not added as option members as this is a convenience member.
 
-**extend** - *[object]*
+**extend(Object)** 
 	
-* This will extend the returned Object with a complete description of the passed in Object. These properties are not added as usable members.
+* This will extend the returned Object with a complete description of the passed in Object. These properties are not added as option members as this is a convenience member.
 
-**add_qualifier** - *[string]*
+**add_qualifier(qualifer, alias)**
 
-* Adds a property to the current list of usable members.
+* Adds a property to the current list of option members. This method also accepts a an alias as the second argument which will be cleared whenever the first one is. This is usefull when using getters and setters within the option data. The alias qualifier does not show up in the *list()* output.
 
-**add_hidden_qualifier** - *[string]*
-
-* Adds a hidden property to the list of members. This should be used when a getter/setter returns a value which is supposed to be a usable member.
-
-**remove_hidden_qualifier** - *[string]*
-
-* Removes a hidden qualifier from the list.
-
-**remove_qualifier** - *[string]*
+**remove_qualifier(qualifer)**
 	
-* Remove a property from the current list of usable members.
+* Remove an entry from the current list of option members. This will also remove any aliased properties from the list.
 
-**list** - *[]*
+**list()**
 
-* This will return a prototype de-coupled Object which contains all of the current usable properties. Updating this Object directly is not advised. All of the values are null as the qualifiers are the significant data.
-
+* This will return an array which contains all of the current option qualifers.
 
 **Basic example of Brace Option usage:**
 

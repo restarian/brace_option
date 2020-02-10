@@ -1,5 +1,4 @@
-# Brace Option 
-## License information by Restarian Technology
+## License information
 
 ----
 ### Brace Option help pages
@@ -13,13 +12,13 @@
 
 #### Brace Option is included in the Brace Suite.
 
-All works, media and writings contained within this project are licensed the same as Brace Document license unless it is explicitly specified otherwise.
+All works, media and writings contained within this project are licensed the same as Brace Option license unless it is explicitly specified otherwise.
 
 #### The Brace Suite is a collection of javascript centric libraries aimed at application development.
 
 A project which is labeled with the Brace Suite is open-sourced under the **MIT** license. However, the license for the Brace Suite may not pertain to all content used within a Brace Suite project. Any (*and all*), content which is not explicitly licensed shall be used under the *Brace Suite* license. Please make sure to verify all content licensing before using the works within the *Brace Suite*.  
 
-___
+---
 
 **Author**: Robert Steckroth, *Bust0ut* [<RobertSteckroth@gmail.com>](mailto:robertsteckroth@gmail.com)
 
@@ -32,8 +31,6 @@ Copyright (c) 2020 Robert Steckroth [<RobertSteckroth@gmail.com>](mailto:RobertS
 The MIT license
 
 Brace Option is a javascript module which adds member data to object prototypes to control properties within the chain as option like data.
-
-The MIT license
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
