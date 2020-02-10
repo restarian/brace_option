@@ -1,54 +1,53 @@
-{ 
-   "name": "brace_option", 
-   "main": "build/brace_option_umd.js", 
-   "version": "0.5.1", 
-   "description": "This script provides function which sits in a prototype to create prototypal property chaining control.", 
-   "license": "MIT", 
-   "scripts": { 
-      "test": "mocha", 
-      "build_config": "build_umd --config-file uglify_option.json", 
-      "build_umd": "r_js -o ./rjs_build_first.js && r_js -o ./rjs_build_second.js suffix=\"_umd\"", 
-      "build_amd": "r_js -o ./rjs_build_first.js && r_js -o ./rjs_build_second.js", 
-      "build": "npm run build_config && npm run build_umd && npm run build_amd", 
+{
+   "name": "brace_option",
+   "main": "build/brace_option_umd.js",
+   "version": "0.5.2",
+   "description": "This script provides function which sits in a prototype to create prototypal property chaining control.",
+   "license": "MIT",
+   "scripts": {
+      "test": "mocha",
+      "build_config": "build_umd --config-file uglify_option.json",
+      "build_umd": "r_js -o ./rjs_build_first.js && r_js -o ./rjs_build_second.js suffix=\"_umd\"",
+      "build_amd": "r_js -o ./rjs_build_first.js && r_js -o ./rjs_build_second.js",
+      "build": "npm run build_config && npm run build_umd && npm run build_amd",
       "make_docs": "brace_document --navlink --link --link-dest ../Readme.md --link-path ../docs/synopsis.md -r -i docs --force-title --title \"Brace Option help pages\" --sort depth --specification --mocha"
-   }, 
-   "dependencies": { 
-   }, 
-   "devDependencies": { 
-      "amdefine": "^1.0.1", 
-      "brace_maybe": "^0.1.3", 
-      "brace_umd": "^0.11.2", 
-      "bracket_utils": "^0.3.1", 
-      "chai": "^4.2.0", 
-      "mocha": "^7.0.0", 
+   },
+   "dependencies": {},
+   "devDependencies": {
+      "amdefine": "^1.0.1",
+      "brace_maybe": "^0.1.3",
+      "brace_umd": "^0.11.2",
+      "bracket_utils": "^0.3.1",
+      "chai": "^4.2.0",
+      "mocha": "^7.0.0",
       "requirejs": "^2.3.5"
-   }, 
-   "optionalDependencies": { 
-      "brace_document": "^1.1.8", 
-      "brace_document_link": "^1.1.9", 
-      "brace_document_mocha": "^1.1.0", 
-      "brace_document_navlink": "^1.1.9", 
+   },
+   "optionalDependencies": {
+      "brace_document": "^1.1.8",
+      "brace_document_link": "^1.1.9",
+      "brace_document_mocha": "^1.1.0",
+      "brace_document_navlink": "^1.1.9",
       "brace_document_specification": "^1.2.2"
-   }, 
-   "author": { 
-      "name": "Robert Steckroth", 
+   },
+   "author": {
+      "name": "Robert Steckroth",
       "email": "RobertSteckroth@gmail.com"
-   }, 
+   },
    "keywords": [
       "options"
-   ], 
+   ],
    "maintainers": [
-      { 
-         "name": "nickali", 
+      {
+         "name": "nickali",
          "email": "robertsteckroth@gmail.com"
       }
-   ], 
-   "readmeFilename": "README.md", 
-   "engines": { 
+   ],
+   "readmeFilename": "README.md",
+   "engines": {
       "node": ">=0.6.0"
-   }, 
-   "repository": { 
-      "type": "git", 
+   },
+   "repository": {
+      "type": "git",
       "url": "https://github.com/restarian/brace_prototype.git"
    }
 }
