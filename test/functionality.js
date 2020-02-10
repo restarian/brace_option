@@ -150,13 +150,13 @@ describe("Using stop further progression methodology for file dependencies: "+pa
 					expect(f.__proto__.add_qualifier).to.be.a("function")
 					expect(f.__proto__.remove_qualifier).to.be.a("function")
 					expect(f.__proto__.list).to.be.a("function")
-					expect(f.__proto__.list()).to.be.a("array")
+					expect(f.__proto__.list()).to.be.an("object")
 
 					expect(f.clear).to.be.a("function")
 					expect(f.add_qualifier).to.be.a("function")
 					expect(f.remove_qualifier).to.be.a("function")
 					expect(f.list).to.be.a("function")
-					expect(f.list()).to.be.a("array")
+					expect(f.list()).to.be.an("object")
 					done() 
 				}, done)
 			})
@@ -257,7 +257,7 @@ describe("Using stop further progression methodology for file dependencies: "+pa
 					f.add_qualifier("e", "_e")
 					f.clear("e")
 					expect(f).to.include({a:11, b:22, c:3, d:4, e: 55, _e: 200})
-					expect(f.list()).to.deep.equal(["a", "b", "c", "d", "e"])
+					expect(f.list()).to.have.all.keys(["a", "b", "c", "d", "e"])
 
 					f.clear()
 
@@ -281,10 +281,10 @@ describe("Using stop further progression methodology for file dependencies: "+pa
 					})
 					var f = new F()
 					
-					expect(f.list()).to.deep.equal(["a", "b", "c"])
+					expect(f.list()).to.have.all.keys(["a", "b", "c"])
 					f.add_qualifier("d")
 					f.add_qualifier("d", "dd")
-					expect(f.list()).to.deep.equal(["a", "b", "c", "d"])
+					expect(f.list()).to.have.all.keys(["a", "b", "c", "d"])
 
 					done()
 
@@ -307,12 +307,12 @@ describe("Using stop further progression methodology for file dependencies: "+pa
 					})
 					var f = new F()
 
-					expect(f.list()).to.deep.equal(["aa", "bb", "cc"])
+					expect(f.list()).to.have.all.keys(["aa", "bb", "cc"])
 					f.remove_qualifier("cc")
 
-					expect(f.list()).to.deep.equal(["aa", "bb"])
+					expect(f.list()).to.have.all.keys(["aa", "bb"])
 					f.remove_qualifier("aa")
-					expect(f.list()).deep.equal(["bb"])
+					expect(f.list()).to.have.all.keys(["bb"])
 					done()	
 
 				}, done)
@@ -329,25 +329,25 @@ describe("Using stop further progression methodology for file dependencies: "+pa
 					})
 					var f = new F()
 
-					expect(f.list()).to.deep.equal(["aa", "bb", "cc"])
+					expect(f.list()).to.have.all.keys(["aa", "bb", "cc"])
 
 					f.remove_qualifier("aa")
 					f.remove_qualifier("aa")
 					f.remove_qualifier("aa")
-					expect(f.list()).to.deep.equal(["bb", "cc"])
+					expect(f.list()).to.have.all.keys(["bb", "cc"])
 
 					f.add_qualifier("aa")
 					f.add_qualifier("aa")
 					f.add_qualifier("aa")
-					expect(f.list()).to.deep.equal(["bb", "cc", "aa"])
+					expect(f.list()).to.have.all.keys(["bb", "cc", "aa"])
 
 					f.add_qualifier("a")
 					f.remove_qualifier("aa")
-					expect(f.list()).to.deep.equal(["bb", "cc", "a"])
+					expect(f.list()).to.have.all.keys(["bb", "cc", "a"])
 
 					f.remove_qualifier("aa")
 					f.add_qualifier("a")
-					expect(f.list()).to.deep.equal(["bb", "cc", "a"])
+					expect(f.list()).to.have.all.keys(["bb", "cc", "a"])
 
 					done()
 				}, done)

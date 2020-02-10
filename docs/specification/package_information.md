@@ -11,7 +11,7 @@
   * [Unit test output](https://github.com/restarian/brace_option/blob/master/docs/specification/unit_test_output.md)
 ----
 
-**Version**: 0.5.1
+**Version**: 0.5.2
 
 **Description**: This script provides function which sits in a prototype to create prototypal property chaining control.
 

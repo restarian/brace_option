@@ -54,7 +54,7 @@ The library provides a member which returns an Object to be used in a prototype.
 
 **list()**
 
-* This will return an array which contains all of the current option qualifers.
+* This will return an Object which contains all of the current option qualifers.
 
 **Basic example of Brace Option usage:**
 
